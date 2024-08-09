@@ -1,3 +1,10 @@
 body {
-    background: gray;
+    background: lightgray;
+}
+
+.etches {
+    width: 10px;
+    height: 10px;
+    border: solid;
+    background: white;
 }

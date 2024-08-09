@@ -1,3 +1,4 @@
+//selects the container and adds 256 divs to it 
 const container = document.getElementById("container");
 
 function makeDivs(numberDivs){
@@ -8,5 +9,5 @@ function makeDivs(numberDivs){
     }
 }
 
-makeDivs(256); //16 x 16 = 256
+makeDivs(256); 
 

@@ -2,16 +2,15 @@ body {
     background: lightgray;
 }
 
-#container {
+#etchersketcher {
     display: flex;
     flex-wrap: wrap;
     flex: 0, 0, 16;
     max-width: 320px;
 }
 
-.etches {
+#etches {
     width: 20px;
     height: 20px;
-    background: white;
 }
 

@@ -5,12 +5,8 @@ body {
 #etchersketcher {
     display: flex;
     flex-wrap: wrap;
-    flex: 0, 0, 16;
-    max-width: 320px;
+    max-width: 360px;
+    max-height: 360px;
 }
 
-#etches {
-    width: 20px;
-    height: 20px;
-}
 

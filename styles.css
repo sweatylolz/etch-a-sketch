@@ -1,5 +1,12 @@
 body {
     background: lightgray;
+
+}
+
+#etchercontainer {
+    display: flex;
+    justify-content: center;
+
 }
 
 #etchersketcher {
@@ -7,6 +14,7 @@ body {
     flex-wrap: wrap;
     max-width: 360px;
     max-height: 360px;
+    background-color: white;
+    height: 360px;
+    width: 360px;
 }
-
-

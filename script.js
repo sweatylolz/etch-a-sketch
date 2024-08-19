@@ -21,10 +21,23 @@ makeDivs(etchGrid);
 
 const gridCells = document.querySelectorAll(".etches");
 
-gridCells.forEach(cell => { 
+//allows user to click and drag to etch
+  gridCells.forEach(cell => { 
     cell.addEventListener("mouseover", evt => {
       if (evt.buttons === 1) { //if user holds click they can 'draw' 
         cell.style.backgroundColor = "black";
       }
     });
   });
+  
+
+
+  document.getElementById("reset").onclick = function(){click()};
+
+  function click() {
+    let cell = document.getElementsByClassName("etches");
+    for (cell of cell)
+        {
+            cell.style.backgroundColor = "white";   
+        }
+  }

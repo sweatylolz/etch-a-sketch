@@ -5,7 +5,7 @@ let startbtn = document.getElementById("start");
 startbtn.onclick = function(){startClick()};
   
 function startClick() {
-  console.log("click");
+  makeDivs();
 }
 
 
@@ -22,9 +22,10 @@ function makeDivs(){
         cells.style.width = etchPixelSize + "px";
         cells.style.height = etchPixelSize + "px";
     }
+    draw();
 }
-makeDivs();
-
+// makeDivs();
+function draw(){
 const gridCells = document.querySelectorAll(".etches");
 //allows user to click and drag to etch
   gridCells.forEach(cell => { 
@@ -34,7 +35,7 @@ const gridCells = document.querySelectorAll(".etches");
       }
     });
   });
-
+}
 
 //reset button sets the background of all grid divs to white
   document.getElementById("reset").onclick = function(){click()};

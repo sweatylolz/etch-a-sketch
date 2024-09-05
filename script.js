@@ -9,6 +9,11 @@ function startClick() {
 
 function makeDivs(){
     let etchSize = Number(prompt("Type the size you would like grid to be (1-99)."));
+        if(etchSize > 99 || etchSize < 1){
+            alert("Invalid Input");
+            etchSize = Number(prompt("Type the size you would like grid to be (1-99)."));
+        }
+
     let etchGrid = etchSize * etchSize;
     let etchPixelSize = 360 / etchSize; //360 is the height and width of the container
     document.querySelectorAll('.etches').forEach(e => e.remove());

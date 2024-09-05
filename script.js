@@ -2,21 +2,18 @@
 const container = document.getElementById("etchersketcher");
 
 let startbtn = document.getElementById("start");
-
 startbtn.onclick = function(){startClick()};
   
 function startClick() {
-    let etchSize = Number(prompt("Type the size you would like grid to be (1-99)."));
-    return etchSize;
+  console.log("click");
 }
 
 
-
-
-
 function makeDivs(){
+    let etchSize = Number(prompt("Type the size you would like grid to be (1-99)."));
     let etchGrid = etchSize * etchSize;
     let etchPixelSize = 360 / etchSize; //360 is the height and width of the container
+
     for (let i=0; i < etchGrid; i++){
         let cells = document.createElement("div");
         cells.classList = "etches";
@@ -26,11 +23,9 @@ function makeDivs(){
         cells.style.height = etchPixelSize + "px";
     }
 }
-
-makeDivs(startClick()); 
+makeDivs();
 
 const gridCells = document.querySelectorAll(".etches");
-
 //allows user to click and drag to etch
   gridCells.forEach(cell => { 
     cell.addEventListener("mouseover", evt => {

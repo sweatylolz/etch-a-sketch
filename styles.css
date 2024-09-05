@@ -8,9 +8,7 @@ body {
 #etchercontainer {
     display: flex;
     justify-content: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-
+    border: solid, black;
 }
 
 #etchersketcher {
@@ -21,4 +19,12 @@ body {
     background-color: white;
     height: 360px;
     width: 360px;
+}
+
+#start {
+    margin-bottom: 15px;
+}
+
+#reset {
+    margin: 15px;
 }
